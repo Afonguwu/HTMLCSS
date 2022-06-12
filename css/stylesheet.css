@@ -1,0 +1,315 @@
+/* reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* base */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+a, a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+	outline: none;
+	
+}
+sub{
+    vertical-align: sub;    
+}
+h1{
+	font-size: 48px;
+}
+h2{
+	font-size: 32px;
+}
+h3{
+	font-size: 24px;
+}
+h4{
+	font-size: 20px;
+}
+h5{
+	font-size: 18px;
+}
+h6{
+	font-size: 12px;
+}
+.equal{
+	font-size: 29px;
+}
+
+/* css tag */
+.flex{
+	display: flex;
+}
+.green{
+	color:#56C4C5;
+}
+.gray{
+	color:#747474;
+}
+.bold{
+	font-weight: bold;
+}
+.mb-8{
+	margin-bottom: 8px;
+}
+.mb-16{
+	margin-bottom: 16px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.mb-28{
+	margin-bottom: 28px;
+}
+.mb-48{
+	margin-bottom: 48px;
+}
+
+.ta-c{
+	text-align: center;
+}
+
+.pos-a{
+	position: absolute;
+}
+.pos-r{
+	position: relative;
+}
+.btn-red{
+	width: 128px;
+	padding: 8px 32px;
+    border-radius: 50px;
+	background: #FF5D50;
+	color: #ffffff;
+}
+.btn-green{
+	width: 135px;
+	padding: 12px 32px;
+    border-radius: 27px;
+	border: 1px solid #56C4C5;
+	background: #56C4C5 ;
+	color: #ffffff;
+	font-family:  'Comfortaa';
+}
+.top{
+	bottom: 23px;
+	right: 48px;
+	position: fixed;
+	z-index: 99;
+	bottom: 20%;
+	right:17%;
+	display: block;
+}
+/* 背景圖 */
+.z-1{
+	z-index: -1;
+}
+.yellow{
+	top:0;
+	right: 15%;
+}
+.green-ball{
+	left: 3%;
+	top:60%;
+}
+
+.blue-ball{
+	right: 10%;
+	top: 180%;
+}
+.yellow-ball{
+	top: 280%;
+	left: 12%;
+}
+/* container */
+.container{
+	max-width: 1120px;
+ 	margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.nav{
+	justify-content: space-between;
+	margin-top: 24px;
+}
+
+.logo{
+	width: 218px;
+	height: 40px;
+}
+
+.header{
+	margin-bottom:20%;
+}
+.banner-left{
+	margin-right: 102px;
+	padding-top: 15%;
+	padding-bottom:15%;
+}
+.banner-right{
+	width: 532px;
+}
+
+.icon{
+	width: 90px;
+	height: 90px;
+	margin-bottom: 24px;
+}
+.web-list{
+	margin-top: 48px;
+	margin-bottom: 100px;
+}
+.web-list ul{
+	justify-content: space-around;
+}
+
+.role-icon{
+	width: 260px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.role ul{
+	justify-content: space-between;	
+}
+.role li{
+	box-shadow: 0px 2px 10px #00000014;
+	border-radius: 12px;
+	background: #FFFFFF;
+	margin-top: 48px;
+	margin-bottom: 100px;
+}
+.guild ul{
+	width: 507px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.guild li{
+	width:230px;	
+	box-shadow: 0px 2px 10px #00000014;
+	background: #FFFFFF; 
+	border-radius: 12px;
+	
+}
+.guild .icon{
+	width: 86px;
+	height: 86px;
+	border-radius:50px;
+	box-shadow: 0px 2px 10px #00000014;
+	background: #ffffff;
+	justify-content: center;
+    align-items: center;
+	margin-top: 32px;
+	margin-left: 32px;
+}
+.guild .summary{
+	margin-left: 32px;
+}
+.sidebar{
+	margin-left: 137px;
+    margin-top: 165px;
+	margin-bottom: 164px;
+
+}
+.guild{
+	margin-bottom: 104px;
+}
+.photo{
+	width: 80px;
+	border-radius:50px;
+	justify-content: center;
+    align-items: center;
+	top: -15%;
+	left: 10%;
+}
+.user .summary{
+	margin-top: 48px;
+	margin-right: 32px;
+	margin-left: 32px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.user .partner{
+	margin-left: 32px;
+	margin-right: 32px;
+}
+.user  .partner .rank{
+	justify-content: space-between;
+}
+.user li{
+	box-shadow: 0px 2px 10px #00000014;
+	background: #FFFFFF; 
+	border-radius: 12px;
+}
+.footer{
+	margin-top: 134px;
+}
+.footer-bg{
+	right: 0;
+	
+}
+.main{
+	padding-top: 260px;
+	padding-bottom: 100px;
+	text-align: center;		
+}
+.copyright{
+	padding-top: 16px ;
+	padding-bottom: 16px;
+	background: #F5F5F5;
+}
